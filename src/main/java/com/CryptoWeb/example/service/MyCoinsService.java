@@ -14,7 +14,7 @@ public class MyCoinsService {
 	@Autowired
     private MyCoinsRepository myCoinsRepository;
 
-    public List<MyCoins> updateMultipleCoins(List<MyCoins> coins) {
+    public List<MyCoins> saveAllCoins(List<MyCoins> coins) {
         return myCoinsRepository.saveAll(coins);
     }
 
